@@ -46,6 +46,12 @@ export class Sidebar {
 		return this.searchSection.getByRole('searchbox');
 	}
 
+	async setDisplayMode(mode: 'Extended' | 'Medium' | 'Condensed'): Promise<void> {
+		await this.searchSection.getByRole('button', { name: 'Display', exact: true }).click();
+		await this.searchSection.getByRole('menuitemcheckbox', { name: mode }).click();
+		await this.searchSection.click();
+	}
+
 	async escSearch(): Promise<void> {
 		await this.page.keyboard.press('Escape');
 	}
@@ -113,12 +119,6 @@ export class Sidebar {
 	async openCreateNewByLabel(name: 'Direct message' | 'Discussion' | 'Channel' | 'Team'): Promise<void> {
 		await this.searchSection.getByRole('button', { name: 'Create new', exact: true }).click();
 		await this.page.getByRole('menuitem', { name }).click();
-	}
-
-	async setDisplayMode(mode: 'Extended' | 'Medium' | 'Condensed'): Promise<void> {
-		await this.searchSection.getByRole('button', { name: 'Display', exact: true }).click();
-		await this.sidebar.getByRole('menuitemcheckbox', { name: mode }).click();
-		await this.searchSection.click();
 	}
 
 	async createEncryptedChannel(name: string) {
