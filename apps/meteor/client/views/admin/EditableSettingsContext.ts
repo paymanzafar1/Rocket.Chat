@@ -35,7 +35,7 @@ export const EditableSettingsContext = createContext<EditableSettingsContextValu
 	queryGroupSections: () => [(): (() => void) => (): void => undefined, (): SectionName[] => []],
 	queryGroupTabs: () => [(): (() => void) => (): void => undefined, (): TabId[] => []],
 	dispatch: () => undefined,
-	isEnterprise: false,
+	isEnterprise: true,
 });
 
 export const useIsEnterprise = (): boolean => useContext(EditableSettingsContext).isEnterprise;

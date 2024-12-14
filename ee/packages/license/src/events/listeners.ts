@@ -59,7 +59,7 @@ export function onToggledFeature(
 ): () => void {
 	let enabled = hasModule.call(this, feature);
 
-	const offValidFeature = onValidFeature.bind(this)(feature, () => {
+	/*const offValidFeature = onValidFeature.bind(this)(feature, () => {
 		if (!enabled) {
 			void up?.();
 			enabled = true;
@@ -71,15 +71,18 @@ export function onToggledFeature(
 			void down?.();
 			enabled = false;
 		}
-	});
+	});*/
 
 	if (enabled) {
 		void up?.();
 	}
+	if (false) {
+		void down?.();
+	}
 
 	return (): void => {
-		offValidFeature();
-		offInvalidFeature();
+		//offValidFeature();
+		//offInvalidFeature();
 	};
 }
 

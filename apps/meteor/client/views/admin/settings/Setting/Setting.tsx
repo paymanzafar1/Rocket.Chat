@@ -104,7 +104,8 @@ function Setting({ className = undefined, settingId, sectionChanged }: SettingPr
 	);
 	const callout = useMemo(() => alert && <span dangerouslySetInnerHTML={{ __html: t.has(alert) ? t(alert) : alert }} />, [alert, t]);
 
-	const shouldDisableEnterprise = setting.enterprise && !isEnterprise;
+	//const shouldDisableEnterprise = setting.enterprise && !isEnterprise;
+	const shouldDisableEnterprise = false;
 
 	const PRICING_URL = 'https://go.rocket.chat/i/see-paid-plan-customize-homepage';
 

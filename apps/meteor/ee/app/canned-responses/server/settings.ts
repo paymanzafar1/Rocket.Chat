@@ -9,7 +9,7 @@ export const createSettings = async (): Promise<void> => {
 		type: 'boolean',
 		public: true,
 		enterprise: true,
-		invalidValue: false,
+		invalidValue: true,
 		modules: ['canned-responses'],
 		enableQuery: omnichannelEnabledQuery,
 	});

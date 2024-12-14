@@ -1117,7 +1117,7 @@ class LivechatClass {
 		}
 		html = html.concat(`
 			<p><strong>Visitor name:</strong> ${name}</p>
-			<p><strong>Visitor email:</strong> ${email}</p>
+			<p><strong>Visitor mobile:</strong> ${email}</p>
 			<p><strong>Message:</strong><br>${emailMessage}</p>`);
 
 		const fromEmail = settings.get<string>('From_Email').match(/\b[A-Z0-9._%+-]+@(?:[A-Z0-9-]+\.)+[A-Z]{2,4}\b/i);
@@ -1153,7 +1153,7 @@ class LivechatClass {
 
 		const fromText = `${name} - ${email} <${from}>`;
 		const replyTo = `${name} <${email}>`;
-		const subject = `Livechat offline message from ${name}: ${`${emailMessage}`.substring(0, 20)}`;
+		const subject = `Livechat offline message from ${name}`;
 		await this.sendEmail(fromText, emailTo, replyTo, subject, html);
 
 		setImmediate(() => {

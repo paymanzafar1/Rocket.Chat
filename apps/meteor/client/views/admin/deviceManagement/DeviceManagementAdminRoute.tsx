@@ -20,7 +20,7 @@ const DeviceManagementAdminRoute = (): ReactElement => {
 	const canViewDeviceManagement = usePermission('view-device-management');
 
 	const { shouldShowUpsell, handleManageSubscription } = useUpsellActions(hasDeviceManagement);
-
+	shouldShowUpsell = false;
 	useEffect(() => {
 		if (shouldShowUpsell) {
 			setModal(

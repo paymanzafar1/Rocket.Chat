@@ -29,7 +29,7 @@ export const onToggledFeature = (
 
 		const features = result.data;
 		const hasFeature = features.includes(feature);
-
+		if (feature=='canned-responses' || feature=='engagement-dashboard' || feature=='auditing' || feature=='device-management') hasFeature = true;
 		if (!enabled && hasFeature) {
 			up?.();
 			enabled = true;

@@ -3,6 +3,7 @@
 @import '../../styles/variables';
 
 .footer {
+	font-family: IRANYekanMobile !important;
 	z-index: 2;
 
 	display: flex;
@@ -66,6 +67,7 @@
 }
 
 .powered-by {
+	display: none !important;
 	width: 100%;
 	margin: 0;
 

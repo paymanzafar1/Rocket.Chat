@@ -1,0 +1,35 @@
+@font-face {
+	font-family: IRANYekan;
+	font-style: normal;
+	font-weight: bold;
+	src: url('/fonts/iranyekan/eot/IRANYekanWebBold.eot');
+	src: url('/fonts/iranyekan/eot/IRANYekanWebBold.eot?#iefix') format('embedded-opentype'),
+		 url('/fonts/iranyekan/woff/IRANYekanWebBold.woff') format('woff'), 
+		 url('/fonts/iranyekan/woff2/IRANYekanWebBold.woff2') format('woff2'); 	 
+}
+
+@font-face {
+	font-family: IRANYekan;
+	font-style: normal;
+	font-weight: normal;
+	src: url('/fonts/iranyekan/eot/IRANYekanWebRegular.eot');
+	src: url('/fonts/iranyekan/eot/IRANYekanWebRegular.eot?#iefix') format('embedded-opentype'), 
+		 url('/fonts/iranyekan/woff/IRANYekanWebRegular.woff') format('woff'),
+		 url('/fonts/iranyekan/woff2/IRANYekanWebRegular.woff2') format('woff2');	 
+}
+
+@font-face {
+	font-family: IRANYekanMobile;
+	font-style: normal;
+	font-weight: normal;
+	src: url('/fonts/iranyekan/mobile/IRANYekanMobileRegular.ttf');
+}
+
+@font-face {
+	font-family: IRANYekanMobile;
+	font-style: normal;
+	font-weight: bold;
+	src: url('/fonts/iranyekan/mobile/IRANYekanMobileBold.ttf');
+}
+
+

@@ -112,17 +112,14 @@ const LeaveMessage: FunctionalComponent<{ path: string }> = () => {
 								/>
 							</FormField>
 
-							<FormField required label={t('email')} error={errors.email?.message?.toString()}>
+							<FormField required label={t('mobile')} error={errors.email?.message?.toString()}>
 								<Controller
 									name='email'
 									control={control}
 									// defaultValue={guestEmail}
-									rules={{
-										required: true,
-										validate: { checkEmail: (value) => validateEmail(value, { style: 'rfc' }) || t('invalid_email') },
-									}}
+									rules={{ required: true }}
 									render={({ field }) => (
-										<TextInput placeholder={t('insert_your_field_here', { field: t('email') })} disabled={loading} {...field} />
+										<TextInput placeholder={t('write_your_mobile')} disabled={loading} {...field} />
 									)}
 								/>
 							</FormField>
