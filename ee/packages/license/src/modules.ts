@@ -44,8 +44,7 @@ export function getModules(this: LicenseManager) {
 	this.modules.add('custom-roles');
 	this.modules.add('accessibility-certification');
 	this.modules.add('unlimited-presence');
-	this.modules.add('contact-id-verification');
-	this.modules.add('teams-voip');
+
 
 	return [...this.modules];
 }
