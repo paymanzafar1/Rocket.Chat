@@ -472,6 +472,10 @@ export class LicenseManager extends Emitter<LicenseEvents> {
 		license: boolean;
 	}): Promise<LicenseInfo> {
 		const activeModules = getModules.call(this);
+		activeModules.push('canned-responses');
+		activeModules.push('livechat-enterprise');
+		activeModules.push('auditing');
+
 		const license = this.getLicense();
 
 		// Get all limits present in the license and their current value

@@ -23,6 +23,30 @@ export function invalidateAll(this: LicenseManager) {
 }
 
 export function getModules(this: LicenseManager) {
+	this.modules.add('auditing');
+	this.modules.add('canned-responses');
+	this.modules.add('ldap-enterprise');
+	this.modules.add('livechat-enterprise');
+	this.modules.add('voip-enterprise');
+	this.modules.add('omnichannel-mobile-enterprise');
+	this.modules.add('engagement-dashboard');
+	this.modules.add('push-privacy');
+	this.modules.add('scalability');
+	this.modules.add('teams-mention');
+	this.modules.add('saml-enterprise');
+	this.modules.add('oauth-enterprise');
+	this.modules.add('device-management');
+	this.modules.add('federation');
+	this.modules.add('videoconference-enterprise');
+	this.modules.add('message-read-receipt');
+	this.modules.add('outlook-calendar');
+	this.modules.add('hide-watermark');
+	this.modules.add('custom-roles');
+	this.modules.add('accessibility-certification');
+	this.modules.add('unlimited-presence');
+	this.modules.add('contact-id-verification');
+	this.modules.add('teams-voip');
+
 	return [...this.modules];
 }
 
