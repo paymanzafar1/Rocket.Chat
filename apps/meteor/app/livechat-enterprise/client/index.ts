@@ -2,8 +2,7 @@ import { hasLicense } from '../../license/client';
 import './startup';
 
 void hasLicense('livechat-enterprise').then((enabled) => {
-	enabled = true;
-	if (!enabled) {
+	if (!enabled && false) {
 		return;
 	}
 
