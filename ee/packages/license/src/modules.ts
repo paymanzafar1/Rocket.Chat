@@ -27,7 +27,7 @@ export function getModules(this: LicenseManager) {
 }
 
 export function hasModule(this: LicenseManager, module: LicenseModule) {
-	if (module=='auditing' || module=='canned-responses' || module=='livechat-enterprise' || module=='voip-enterprise' || module=='engagement-dashboard' || module=='scalability' || module=='saml-enterprise' || module=='oauth-enterprise' || module=='device-management' || module=='federation' || module=='videoconference-enterprise' || module=='message-read-receipt' || module=='outlook-calendar' || module=='hide-watermark' || module=='custom-roles' || module=='unlimited-presence') return true;
+	if (module=='auditing' || module=='canned-responses' || module=='livechat-enterprise' || module=='engagement-dashboard' || module=='device-management' || module=='message-read-receipt' || module=='hide-watermark') return true;
 	return this.modules.has(module);
 }
 
